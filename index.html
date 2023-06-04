@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+
+	<link rel="stylesheet"type="text/css" href="./css/style.css">
+ <script src="wow.js"></script>
+ <script> new WOW().init();</script>
+<link rel="stylesheet"type="text/css" href="animate.css">
+
+<style type="text/css">
+
+	<style type="text/css">
+	 html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+ display: block;
+}
+body {
+ line-height: 1;
+}
+ol, ul {
+ list-style: none;
+}
+blockquote, q {
+ quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content: '';
+ content: none;
+}
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+	
+
+	
+	body{background: white;width: 100%;color: blue;word-break: keep-all;background: ;margin: 0px;}
+	section{width: 1200px;margin: auto;background: }
+	
+	nav{width:1000px;margin:auto;background: ;margin-top:100px;position: sticky;}
+	ul{background: ;padding-left: 20px;padding-right: 20px;}
+	h2{ font-family: 'GmarketSans';font-weight: 700; font-size: 3rem;line-height: 4.1rem; margin-bottom: 100px;}
+    h3{margin-bottom: 70px;font-size: 2rem;position: absolute;left: 35%;top: -33%;color: white;}
+	h4{font-size: 1.5rem; line-height: 2.3rem; margin-bottom:30px;margin-top: 110px;}
+	h5{font-size: 1.6rem; line-height: 3.5rem;text-align: center;font-family: 'GmarketSans';font-weight: 500;}
+	h6{text-align: center;font-size: 1.6rem;line-height: 3.5rem;font-family: 'GmarketSans';font-weight: 500;margin: 0px;}
+	p{font-size: 1.1rem;line-height: 2.2rem;font-family: 'Noto Sans KR', sans-serif;font-weight: 400;margin: 0px;}
+	a{}
+	 
+	 a:hover{background:blue;
+            color: white;
+            transition: all 0.5s;}
+    footer{height: 140px;padding-bottom: 10px;margin-top: 150px;padding-left: 50px;padding-right: 50px;position: relative;}        
+
+    .intro{padding-left: 200px;}
+    .circle{border-radius: 50%;width:60px;height: 60px;background: blue;position: relative;margin-bottom: 80px;}
+	.sticky{position: sticky;top: 10px;z-index: 10;}
+    .header{padding-top: 60px;}
+    .flex{display: flex;}
+    .flexmenu{display: flex;justify-content: space-between;}
+    .flexmini{display: flex;width: 950px;margin: auto;gap: 65px;justify-content: space-between;}
+    .left{width: 485px;background: }
+    .right{width: 742px;height: 525px;}
+    .bg-three{background: url(threedimension.png)no-repeat;background-size:100%;
+    background-position-x: center;background-position-y: center;}
+    .lala{ }
+    .ss{clear:both;}
+    .or{display: block;
+     text-decoration: none;
+     color: blue;
+    border: 3px solid blue;
+     border-radius: 30px;
+     text-align: center;
+     font-size: 15px;
+     font-family: 'Barlow Condensed', sans-serif;
+     font-weight: 600;
+     padding-top: 21px;padding-bottom: 18px;;
+     width: 150px;
+     background: white;
+     font-family: 'GmarketSans';font-weight: 700;}
+    .third{width: 200px;display: block;
+     text-decoration: none;
+     color: blue;
+    border: 3px solid blue;
+     border-radius: 30px;
+     text-align: center;
+     font-size: 15px;
+     font-family: 'Barlow Condensed', sans-serif;
+     font-weight: 600;
+     padding-top: 21px;padding-bottom: 18px;;
+     background: white;
+     font-family: 'GmarketSans';font-weight: 700;}
+    .border{width: 100px;height: 100px;background: pink;border: 2px solid red;}
+    .l{width: 40%}
+    .r{width: 60%;position: absolute; right: 0px; top: 0px;animation: goback 1s 1s cubic-bezier(.28,.97,.79,.94) forwards;opacity: 0;animation-delay: 1s;}
+    @keyframes goback{
+        from{right: 0px;opacity: 0}
+        to{right: 70px;opacity: 1}
+    } 
+    .bg-mail{height: 700px;;background: url(mail.png)no-repeat;background-size:100%;
+    background-position-x: center;background-position-y: 0;}
+    .m{position: relative;width: 100vw;margin-bottom: 100px;}
+    .aa{padding-top: 100px;padding-bottom: 120px;}
+    .center{padding-top: 90px;}
+    .bb{padding-top: 180px;padding-bottom: 50px;}
+    .sfs{margin-bottom: 0px;padding-top: 60px;}
+    .under{margin-top: 155px;}
+    .pic{width: 907px;height: 400px;margin: auto;padding-bottom: 100px;background: pink;margin-top: 0px;}
+    .change{margin-top: 30px;}
+    .bg-site{background: url(site.png)no-repeat;background-size:100%;
+    background-position-x: center;}
+    .menu{padding-top: 30px;padding-bottom: 100px;}
+    .aaa{background:;width: 30%;}
+    .bbb{background:;width: 30%;}
+    .ccc{background:;width: 24%;}
+    .sitelink{margin:auto;margin-top: 40px;color: white;background: blue;width: 200px;display: block;
+     text-decoration: none;
+    border: 3px solid blue;
+     border-radius: 30px;
+     text-align: center;
+     font-size: 15px;
+     padding-top: 21px;padding-bottom: 18px;;
+     font-family: 'GmarketSans';font-weight: 700;}
+     .sitelink:hover{color: blue;background: cyan;border: 3px solid cyan;transition: all 0.5s;}
+    .value{position: relative;}
+    .ex1{margin-bottom: 103px;padding-top: 100px;}
+    .ex2{}
+    .ex3{margin-bottom: 103px;text-align:right;}
+    .rrrr{text-align: right;font-size: 1.5rem;line-height: 3rem;color: white;font-family: 'GmarketSans';font-weight: 500;}
+    .llll{text-align: left;font-size: 1.5rem;line-height: 3rem;font-family: 'GmarketSans';font-weight: 500;}
+    .white{color: white;}
+    
+    .flexuse{width: 1120px;margin: auto;display: flex;gap: 65px;margin-top: 150px;}
+     .flexusee{width: 1120px;margin: auto;display: flex;gap: 65px;margin-top: 70px;}
+    .flexuse2{width: 1136px;margin: auto;display: flex;gap: 65px;margin-top: 80px;}
+    .use{width: 30%;background:;}
+    .use2{width: 32%}
+    .use3{width: 32%}
+    .o
+    .t
+    .h
+    .second{margin-top: 100px;}
+    .prtwo{float: right;margin-right: px;background:}
+    .pr{padding-top: 30px;}
+    .clear{clear: both;}
+    .last{margin-top: 150px;padding-top: 170px;padding-bottom: 100px;background: linear-gradient( to bottom,white, blue );}
+    .centerp{text-align: center;font-size: 1rem;line-height: 2rem;font-family: 'Noto Sans KR', sans-serif;font-weight: 400;color: white;background: }
+    .lasth6{margin-bottom: 20px;line-height: 3rem;color: white;font-weight: 700;}
+    .history{padding-top: 110px;}
+    .blue{background: #001bff;padding-bottom: px;}
+    .name{font-size: 1.5rem;font-family: 'GmarketSans';font-weight: 500;margin-bottom: 100px;}
+    .value3{position: relative;padding-top: 100px;margin-top: 100px;}
+    .footer{background: blue;}
+    .f6{margin-bottom: 10px;color: white;font-weight: 700;text-align-last:left;font-size:1.5rem; font-family: 'GmarketSans'}
+    .ff{margin-bottom: 30px;color: white;font-weight: 700;text-align-last:left;font-size:1.2rem;font-family:'GmarketSans' }
+    .fp{text-align: left;font-size: 0.7rem;line-height: 2rem;font-family: 'Noto Sans KR', sans-serif;font-weight: 400;color: white;margin-bottom: 20px;}
+    .lastr{float: right;color: white;text-align: center;font-size: 1rem;line-height: 2rem;font-family: 'GmarketSans';font-weight: 500;padding-top: 50px;}
+    .youtube{margin: center;color: white;text-align:center;font-size: 1rem;line-height: 2rem;font-family: 'GmarketSans';font-weight: 700;display: block;
+     text-decoration: none; 
+    border: 0px ;
+   text-align: center; 
+
+     font-family: 'GmarketSans';font-weight: 700;}
+    .youtube:hover{color: cyan;text-align: center;transition: all 0.5s;}
+
+
+
+
+
+	
+	.bg-site{background: url(site.gif)no-repeat;background-size:100%;
+    background-position-x: center;}
+	.bg-three{background: url(threedimension.png)no-repeat;background-size:90%;
+    background-position-x: center;background-position-y: center;}
+
+    .useback{width: 700px;height: 600px;position: absolute;top: 10px;right: 0px;background: url(first.png)no-repeat;background-size:90%;
+    background-position-x: center;background-position-y: center;}
+    .usebacktwo{width: 700px;height: 600px;position: absolute;top: 10px;background: url(first.png)no-repeat;background-size:90%;
+    background-position-x: center;background-position-y: center;}
+     .value2{background: url(history.png)no-repeat;height: 830px;width: 100%;margin: 0px;margin-top: 150px;background-size: 100vw 90%;}
+	   
+    .bg-mail{height: 500px;;background: url(mail.png)no-repeat;background-size:60%;background-position-x: center;}
+    .useback3{width: 698px;height: 785px;position: absolute;top: 10px;right: 0px;background: url(connected.png)no-repeat;background-size:100%;
+    background-position-x:;background-position-y: ;}
+    .science{background: url(scientic.png)no-repeat;height: 760px;width: 100%;margin: 0px;margin-top: 150px;background-size: 100%;margin-bottom: 100px;}
+     .society{background: url(societic.png)no-repeat;height: 755px;width: 100%;margin: 0px;margin-top: 160px;background-size: 100%;margin-bottom: 100px;}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+<section class="flex header" id="1">
+	
+	<div class="left">
+		
+		<div ><h2>가계도에 대해<br>얼마나 알고<br> 있나요?</h2></div>
+		<div>
+			<div>
+				<h4>가계도<br>[ genogram , 家系圖 ]</h4>
+			</div>
+			<p>가족 간의 관계를 빠르게 알아보고 필요한 정보를<br>손쉽게 얻기 위해 제작하는 그림</p>
+		</div>
+	</div>
+	<div class="right bg-three"></div>
+</section>
+</header>
+
+
+<div class="sticky">
+		<nav>
+		<ul class="flexmenu">
+			<li>
+				<a href="index.html" class="or"> 가계도란? </a>
+			</li>
+			<li>
+				<a href="#2" class="or"> 가계도 합치기 </a>
+			</li>
+			<li>
+				<a href="#3" class="third"> 가계도, 왜 필요할까? </a>
+			</li>
+			<li>
+				<a href="#4"classor class="or"> 마무리하며 </a>
+			</li>
+		</ul>
+		</nav>
+</div>
+
+
+<section>
+	<div class="aa">
+	<h6>대부분 가계도란 그저 딱딱하고 복잡한, 내가 모르는 무더기의 혈연과 묶여 있는<br>덩어리 같은 것이라 생각할텐데요, 저 역시 똑같았습니다.<br>이 메일을 받기 전까진요. </h6>
+	</div>
+
+</section>
+
+<section class="flex m">
+	
+	<div class="l">
+		<div class="center">
+			<p class="intro">메일을 읽고 처음 든 생각은,<br>음, 그래서 이 사람이 언제 나한테 만 달러를<br> 송금해 달라고 할까?</p>
+			<p class="intro">한편으로 8만명의 친척에 대해서도 생각해<br> 봤습니다. 내게 그 정도의 친척이 필요할까?<br>몇 명 만으로도 골치 아픈데 말이죠.</p>
+		</div>
+	</div>
+	
+		<div class="wow animate__lightSpeedInRight r"><div class="bg-mail "></div></div>
+
+	
+	<div class="clear">
+</section>
+
+ 
+
+<section>
+	
+	<div class="bb">
+	<h6>하지만 곧 내가 전 세계의 8만명의 사람과 연결되어<br>있다는 사실에 눈을 떴습니다.<br>
+	이는 대학 7개의 학생 수와 맞먹는 사람들이 나와 가족으로서<br>연결되어 있다는 것입니다.</h6>
+	</div>
+
+</section>
+
+<section class="sfs" id="2">
+	<div>
+		<h2>당신은 얼마나 많은 사람과<br>연결되어 있는지 궁금하지 않나요?</h2>
+	</div>
+	<div class="under">
+		<h5>가계도를 만들고 다른 사람들의 가계도와<br>합칠 수 있는 사이트가 있습니다.</h5>
+	</div>
+</section>
+
+
+<section class="change">
+	<div class="pic bg-site"></div>
+</section>
+
+<section>
+	
+	<div>
+		<div class="flexmini">
+			
+			<div class="aaa">
+				<p>이곳에 당신의 가계도를 업로드하면 당신의 가계도에 있는 홍길동이 다른 가계도에 있는 홍길동과 같은지 확인하고, 맞다면 합칠 수 있습니다.</p>
+			</div>
+			
+			<div class="bbb">
+				<p>가계도를 합치고, 합치고, 합치고,<br>또 합쳐서 수천, 수백만명의 사람들이 들어 있는 거대한 초특급 가계도를<br>갖게 될 때까지 통합합니다.</p>
+			</div>
+			
+			<div class="ccc">
+				<a href="https://www.familysearch.org/en/search/discovery/?cid=sem-fsup-14581&gclid=Cj0KCQjw7PCjBhDwARIsANo7CgkJHBq10QTz1qnhI4hObDEILKgHF2tX6kK-G3xOnVYYA4--6DdzpQUaAv_kEALw_wcB"  target="_blank" class="sitelink">가계도 합치러 가기</a>
+			</div>
+		
+		</div>
+	</div>
+</section>
+
+<section>
+		<div class="bb">
+	<h6>하지만 이게 정말 중요한 일일까요?<br>
+우리가 모두 연결되어 있다는 사실엔 어떤 의미가 있을까요?<br>
+가계도를 알게 되는 것엔 어떤 이점이 있을까요?
+	</div>
+
+</section>
+
+
+
+<div class="blue" id="3">
+	<div class="science">
+	<section class="second">
+			
+			<div class="ex1">
+				<h2 class="white">첫째,<br>과학적 가치가<br>있습니다.</h2>
+			</div>
+			<div class="ex2">
+				<h6 class="llll white">많은 건강 문제는 유전적이죠. <br>가계도는 질병이 어떻게<br>유전되는지에 대한 가치 있는<br> 데이터를 제공합니다. </h6>
+			</div>
+	</section>
+	</div>
+</div>
+
+
+
+<section>
+	
+	<div>
+		<div class="flexuse">		
+			<div class="use">
+				<div class="circle"><h3>1</h3></div>
+				<div class="name">질병의 발견</div>
+				<p>가계도는 개인의 건강 상태, 특히 유전적인 질환에 대한 건강 상태를 평가하기 위해서 자주 사용됩니다. 한 가족 내의 천식, 당뇨, 암, 심장병 등의 질환의 발생 빈도를 보는 것은 질병 예방 및 대처에 많은 도움이 됩니다.
+</p>
+			</div>
+			
+			
+			<div class="use">
+				<div class="circle"><h3>2</h3></div>
+				<div class="name">유전 여부 관찰</div>
+				<p>가계도를 이용해 질병의 영향을 받는<br>가족의 수를 확인하면 어떤 질병에 유전적 요소가 있는지 여부를 확인하는 데 도움이 될 수 있습니다. 또한 가계도를 통해 유전자와 환경이 복잡하게 상호작용하는 방식을 연구하는 데 사용될 수 있습니다.</p>
+			</div>
+			
+			
+			<div class="use">
+				<div class="circle"><h3>3</h3></div>
+				<div class="name">참고자료 역할</div>	
+				<p>가계도를 통해 특정 질환을 발견하지 못했더라도 향후 질병이 발생할 시 가계도를 통한 정보 파악으로 질병을 치료하는 데 도움이 될 수 있습니다.
+</p>
+			</div>	
+		</div>
+	</div>
+
+</section>
+
+
+	<div class="value2">
+		<section class="history">
+		<div class="prtwo">
+			<div class="ex3">
+				<h2 class="white">둘째,<br>역사적 가치가<br>있습니다.</h2>
+			</div>
+			<div>
+				<h6 class="rrrr">가계도는 사회의 역사를 <br>살펴볼 때도 중요한 자료입니다.<br>가계도를 통해 경제, 문화, 정치 등의<br>사회적 변화를 추적할 수 있기 때문이죠.</h6>
+			</div>	
+		</div>
+		<div class="clear"></div>
+		</section>
+	</div>	
+
+<section>
+	<div>
+		<div class="flexusee">		
+			<div class="use">
+				<div class="circle"><h3>1</h3></div>
+				<div class="name">문화적 유산 보존</div>
+				<p>가계도를 통해 가족의 역사와 문화를 이해하게 된다면 가족 구성원들에게서 전해오는 문화, 전통, 습관 등을 다음 세대에 전달하고 보존하는 데 기여할 수 있습니다. 이러한 문화적 유산은 해당 가족뿐만 아니라, 지역 사회나 전 세계적으로 문화적으로 다양한 측면을 이해하는 데에도 도움이 됩니다.
+</p>
+			</div>
+			
+			
+			<div class="use">
+				<div class="circle"><h3>2</h3></div>
+				<div class="name">역사 교육의 보완재</div>
+				<p>역사 교육은 대개 국가, 지역 또는 세계적인 역사를 중심으로 합니다. 그러나 가족의 역사는 보다 개인적이고 구체적인 이야기를 제공하며, 역사적 인물과 사건에 대한 직접적인 연결고리를 발견하게 합니다.이는 과거 사람들의 삶과 당시의 사건들에 관심을 가지게 되는 출발점이 될 수 있습니다
+</p>
+			</div>
+			
+			
+			<div class="use">
+				<div class="circle"><h3>3</h3></div>
+				<div class="name">이민 역사 연구</div>	
+				<p>가계도를 통해 이민자들이 어디에서 출발하고 도착했는지와 같은 이민 경로와 관련된 지리적 정보와 혼혈률을 바탕으로 이민 역사를 보다 효과적으로 이해할 수 있습니다. 이민 역사 추적 및 분석은 다문화 사회의 문제점과 이민자 가족의 어려움을 이해하고 대처방안을 모색하는 데도 도움이 됩니다. 
+
+
+</p>
+			</div>	
+		</div>
+	</div>
+</section>
+
+<div class="blue">
+	<div class="society">
+	<section class="second">
+			
+			<div class="ex1">
+				<h2 class="white">셋째,<br>사회적 가치가<br>있습니다.</h2>
+			</div>
+			<div class="ex2">
+				<h6 class="llll white">우리는 모두 같은<br>조상으로부터 비롯되었죠.<br> 가계도는 인종과 국적을 넘나드는<br> 새로운 연결고리가 될 것입니다.
+</h6>
+			</div>
+	</section>
+	</div>
+</div>
+
+<section>
+		<div>
+		<div class="flexuse">		
+			<div class="use">
+				<div class="circle"><h3>1</h3></div>
+				<div class="name">혐오주의 완화</div>
+				<p>가계도는 편견주의자들에겐 달갑지 않은 이야기일 겁니다.
+그들이 어떤 인종, 어떤 집단을 혐오하든 간에, 얼마나 그들이  그들이 그 집단 속 수많은 사람들과 친척이라는 것-생물학적으로 연결되어 있다는 것을 깨달아야 할 것이기 때문이니까요. 한마디로 누워서 침 뱉는 꼴이 되는 겁니다.
+</p>
+			</div>
+			
+			
+			<div class="use">
+				<div class="circle"><h3>2</h3></div>
+				<div class="name">혐오범죄 완화</div>
+				<p>역사를 되돌아 보았을 때, 인종 분리, 유대인 학살 … 인류사에서 반복되어 온 많은 끔찍한 범죄들 대부분은 한 집단이 다른 집단을 열등하다고 여기는 인식 때문에 일어났는데요, 이젠 그럴 수 없게 되었습니다. 우리는 같은 종일 뿐 아니라 한 가족이니까요. DNA가 99.9% 같습니다.</p>
+			</div>
+			
+			
+			<div class="use">
+				<div class="circle"><h3>3</h3></div>
+				<div class="name">상호 연결성</div>	
+				<p>우리가 자신보다 더 큰 무언가에 속해 있고, 세상의 모든 이들과 연결되어 있다는 감각을 키운다면, 사회 구성원들 간에 서로를 지지하고 도와줄 수 있는 관계를 형성할 수 있는 기회가 많아집니다.
+또한 연결된 관계를 통해 새로운 가족의 문화나 역사를 알게 될 수 있으며, 그로 인해 새로운 세상과 기회를 만나게 될 수 있습니다.</p>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+
+<div class="footer" id="4">
+	<div class="last">
+	<h6 class="lasth6">가계도를 통해<br>어디까지 바라볼 수 있을까요?</h6>
+	<p class="centerp">우리가 세상 모든 사람과 연결되어 있다는 사실은 어떤 가능성을 가지고 있을까요?<br>당신을 포함해, 우리는 인종과 국적을 넘나들어 다채롭고 혁신적인 생각을 할 수 있는 수많은 가족들을 가지고 있습니다.<br>우리가 함께 힘을 합친다면 세상의 수많은 중요한 문제들을 해결할 수 있을 겁니다.<br>그러므로, 친척 대 친척으로, 당신과 연결될 날을 고대합니다. 감사합니다. </p>
+	</div>
+
+
+<footer>
+	<div class="lastr">
+		<div>click ▼</div>
+		
+		<a href="https://youtu.be/2_lBiFZ85d0" target="_blank" class="youtube">더 알아보기</a>
+	</div>
+	<div class="f6">FAMILY TREE</div>
+	<div class="ff">
+가계도, 무한한 연결의 가능성</div>
+	<p class="fp">@2023 JungHaYoung. All Rights Reserved.</p>
+	
+</footer>
+
+</div>
+
+
+
+</body>
+</html>
